@@ -1,9 +1,9 @@
-//제출용 기본틀
+package baekjoon;
 
 import java.util.Scanner;
 
-public class Main {
-    public static int fac(int n) {
+public class Factorial {
+    public static float fac(int n) {
         if (n == 1) {
             return 1;
         } else {
@@ -12,7 +12,7 @@ public class Main {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = fac(sc.nextInt());
+        float n = fac(sc.nextInt());
         int temp = 0;
         while (true){
             if(n%10==0){
@@ -22,7 +22,6 @@ public class Main {
                 break;
             }
         }
-        System.out.println(n);
         System.out.println(temp);
     }
 }
