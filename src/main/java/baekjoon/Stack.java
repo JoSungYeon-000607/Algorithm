@@ -1,8 +1,10 @@
-//제출용 기본틀
+package baekjoon;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
-public class Main {
+public class Stack {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] stack = new int[100000];
@@ -12,8 +14,6 @@ public class Main {
             String cmd = sc.next();
             String[] temp = cmd.split(" ");
             if(temp[0].equals("push")) {
-                System.out.println(cmd);
-                System.out.println(Arrays.toString(temp));
                 stack[top++] = Integer.parseInt(temp[1]);
             } else if(temp[0].equals("pop")) {
                 if(top == 0) {
