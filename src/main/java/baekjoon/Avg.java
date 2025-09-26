@@ -1,10 +1,12 @@
+package baekjoon;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
-public class Main {
-
+public class Avg {
     public static void main(String[] args) throws IOException {
 
         // 1. BufferedReader를 사용하여 입력을 받습니다.
